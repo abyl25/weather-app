@@ -9,13 +9,15 @@ class App extends Component {
     // console.log("constructor()");
     super();
     this.state = {
+      bool: false,
       searchCity: "",
       location: {},
       weather: {},
       main: {}
     };
+  }
 
-    // this.getLocationByIP();
+  componentDidMount = () => {
     this.getByGeolocationAPI();
   }
 
@@ -71,6 +73,7 @@ class App extends Component {
         console.log(data);
 
         this.setState({
+          bool: true,
           weather: data,
           main: data.main
         });
@@ -93,11 +96,13 @@ class App extends Component {
 
   render() {
     // console.log("render() called");
+    const bool = this.state.bool;
+
     return (
       <div className="App">
         <h2>Weather Info</h2>
         <Search searchHandler={this.searchHandler} />
-        <WeatherDetails weather={this.state.weather}/>
+        { !bool ? "" : <WeatherDetails weather={this.state.weather}/> }
       </div>
     );
   }
