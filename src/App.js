@@ -33,7 +33,6 @@ class App extends Component {
         this.setState({
           location: loc
         }, () => this.getWeather('', this.state.location));
-        // this.getWeather();
     })
   }
 
@@ -57,7 +56,6 @@ class App extends Component {
 
   getWeather = (city = '', location = '') => {
     // console.log("getWeather()");
-    // const apikey = "4a9fa3f90cb3e2ec670afb8b4b8caece";
     const { lat, lon } = location;
     
     let weatherURL;
