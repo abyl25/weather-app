@@ -84,6 +84,9 @@ class App extends Component {
     e.preventDefault();
     const cityName = e.target.elements[0].value.trim();
     if (cityName.length > 0) {
+      this.setState({
+        searchCity: cityName
+      });
       this.getWeather(cityName);
     }
   };
