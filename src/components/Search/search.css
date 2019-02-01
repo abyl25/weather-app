@@ -1,0 +1,49 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+.title {
+    margin: 15px auto;   
+    /* padding: 10px; */
+    color: #fff;
+}
+
+.search_form {
+    margin: 30px 0 50px 0;
+}
+
+.search_input {
+    background-color: transparent;
+    border-style: none;
+    border-bottom: 1px solid #20a619;
+    border-radius: 1px;
+    width: 300px;
+    height: 25px;
+    padding: 5px;
+    padding-bottom: 4px;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.search_input:focus {
+    outline: none;
+}
+
+.search_btn {
+    border-style: none;
+    width: 100px;
+    height: 33px;
+    padding: 5px;
+    border-radius: 3px;
+    background: #49aee9;
+    color: #fff;
+    font-size: 15px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.search_btn:active {
+    outline: none;
+}

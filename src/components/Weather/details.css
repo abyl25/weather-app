@@ -1,0 +1,25 @@
+.details {
+    width: 50%;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin: 0 auto 100px;
+}   
+
+.weather-key {
+    border-bottom: solid 2px rgba(255,255,255,0.06);
+    color: #f16051;
+    margin: 0;
+    padding: 20px 0 20px 30px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.weather-value {
+    color: #fff;
+    font-weight: 200;
+}
+
+.not-found {
+    color: #fff;
+}

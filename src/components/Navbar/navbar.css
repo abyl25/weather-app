@@ -1,0 +1,36 @@
+nav {
+    width: 100%;
+    height: 45px;
+    background-color: #39CCCC; 
+    /* background-color: #001f3f;   */
+    /* def - #0b98de;  #39CCCC */ 
+}
+
+nav a {
+    display: block; 
+    float: left;
+    height: 25px;
+    /* height: 100%; */
+    padding: 10px; 
+    margin-right: 10px; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    /* background-color: #83f0fc; */
+    background-color: #DDDDDD;
+    /* color: #46a4f7; */
+    color: #3D9970;
+}
+
+#logo {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    letter-spacing: -1px;
+    text-shadow: 1px 1px 2px #58b4ff;
+    padding: 0px 40px 0 20px;
+}
